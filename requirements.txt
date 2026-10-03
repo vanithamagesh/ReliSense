@@ -1,0 +1,6 @@
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+torch>=2.2,<3          # WDCNN (phase4), order-spectrum CNN (phase6) and the 15-bearing sensor monitor
+libarchive-c>=5.1,<6   # reads the official .rar archives; needs the system library (apt-get install libarchive-dev)
