@@ -1,0 +1,42 @@
+Phase 28 summary v1.0 (computed from phase28_results.json, run of 8 October 2026, --no-rf-cw)
+Adoption: V1_PC criteria [True, True, False] adopted False
+
+Balanced accuracy (%) per setting
+setting             V1   V1_PC     NFS  NFS_PC   CW_PC   MB_PC   NF_PC
+PB L8_c0          97.0    96.7    92.0    90.0    96.7    79.7    88.0
+PB L8_all         78.8    86.7    76.7    83.9    85.0    83.0    84.8
+PB L10            78.7    78.7    78.0    78.0    78.0    77.4    76.7
+PB A2R            70.6    71.7    68.6    69.1    70.3    70.8    67.3
+PB LOBO           81.2    84.7    81.2    85.0    84.3    84.5    83.5
+CWRU LOSO         83.3    88.9    81.1    88.9    88.9    85.4    88.4
+CWRU 1SIZE        79.7    80.3    83.9    85.9    80.3    77.5    75.5
+HUST LOTO         85.0    85.0    85.6    85.6    84.4    80.6    83.3
+HUST 1TYPE        73.9    73.9    76.2    76.2    74.2    65.3    73.6
+OTTAWA LOPO       98.3    98.3    98.3    99.2    98.3    99.2    99.2
+OTTAWA 1PROF      95.9    95.9    94.3    94.3    95.9    98.6    95.1
+mean 11          83.86   85.51   83.27   85.09   85.12   81.99   83.22
+
+LOBO decisions from k consecutive recordings: accuracy / false alarms / missed (%), n decisions
+V1              k1: 83.7/32.1/6.6 (n 2319)  k5: 87.7/30.2/3.5 (n 463)  k10: 87.4/31.2/3.8 (n 231)  seq: 87.5/31.2/3.8 (3.22 rec)
+V1_PC           k1: 84.7/15.6/11.2 (n 2319)  k5: 87.9/9.4/9.8 (n 463)  k10: 89.6/6.2/8.7 (n 231)  seq: 89.2/6.2/9.2 (3.26 rec)
+NFS_PC          k1: 85.2/16.2/10.4 (n 2319)  k5: 89.8/6.2/8.2 (n 463)  k10: 91.3/6.2/6.6 (n 231)  seq: 91.4/6.2/6.5 (3.23 rec)
+p23_fo_resnet   k1: 78.8/37.5/8.3  k5: 80.1/39.6/9.0  k10: 81.8/37.5/8.2
+p23_irk_raw     k1: 62.1/30.4/8.7  k5: 62.6/28.1/8.2  k10: 62.3/29.2/8.7
+p23_resnet_env  k1: 66.1/18.1/28.0  k5: 68.3/17.7/27.5  k10: 67.5/16.7/29.0
+p23_resnet_raw  k1: 59.5/45.4/10.6  k5: 59.2/45.8/9.5  k10: 58.9/45.8/9.8
+p24_env_coral   k1: 72.7/47.7/2.7  k5: 72.4/47.9/2.7  k10: 73.2/47.9/2.7
+p24_env_dann    k1: 59.1/41.7/9.2  k5: 58.1/45.8/7.6  k10: 58.0/43.8/7.1
+p24_env_erm     k1: 75.9/36.9/5.5  k5: 77.5/35.4/5.4  k10: 77.9/33.3/5.5
+p24_ord_coral   k1: 76.8/37.3/9.6  k5: 80.1/35.4/7.1  k10: 78.8/37.5/8.2
+p24_ord_dann    k1: 79.1/36.2/4.8  k5: 81.9/37.5/1.9  k10: 81.8/37.5/1.6
+p24_ord_erm     k1: 75.8/39.0/8.5  k5: 77.8/38.5/6.8  k10: 78.8/33.3/6.6
+p24_ord_gdro    k1: 75.9/38.8/8.6  k5: 78.4/35.4/7.6  k10: 79.2/33.3/6.0
+
+LOBO kappa 0.7 (pooled): coverage / selective accuracy / false alarms / missed (%)
+V1       68.6 / 97.5 / 2.7 / 0.5
+V1_PC    69.9 / 96.4 / 1.7 / 1.9
+NFS      68.3 / 97.4 / 1.9 / 0.5
+NFS_PC   69.9 / 96.1 / 1.2 / 2.3
+
+Note: if v1.0 of the script produced this run, the Paderborn rows of the condition-wise fusions (CW, MBCW, NFCW, NFSCW and _PC)
+may mix splits fused with RF and with RF_C; V1, V1_PC, MB, NF, NFS and their _PC rows are not affected.

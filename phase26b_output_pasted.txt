@@ -1,0 +1,28 @@
+Phase 26b output pasted by the user on 8 October 2026 (unedited).
+LOBO, ENSX_PC (balanced decision) against:
+  RF   : better on 10, worse on 10 of 29 bearings, Wilcoxon p = 0.779
+  LRX  : better on 10, worse on 10 of 29 bearings, Wilcoxon p = 0.881
+  ENSX : better on 6, worse on 10 of 29 bearings, Wilcoxon p = 0.587
+  ENSX    accuracy 83.7 (95% CI 76.6-90.9); recall H / OR / IR 67.9 / 87.9 / 87.7
+  ENSX_PC accuracy 84.7 (95% CI 77.2-91.3); recall H / OR / IR 84.4 / 83.3 / 86.4
+  accuracy of every bearing (ENSX -> ENSX_PC):
+   K001 100->100  K002 60->72  K003 100->100  K004 25->61  K005 31->72  K006 91->100  KA01 100->100  KA03 100->98  KA04 99->99  KA05 100->99  KA06 100->100  KA07 100->100  KA08 91->87  KA09 79->75  KA15 69->52  KA16 100->100  KA22 75->62  KA30 42->28  KI01 100->100  KI03 84->85  KI04 100->100  KI05 70->65  KI07 75->69  KI08 99->99  KI14 76->76  KI16 99->99  KI17 68->60  KI18 100->100  KI21 95->98
+All Paderborn protocols: recall H / OR / IR (%) and bearings correct, ENSX -> ENSX_PC
+  L8_c0   | ENSX: 100.0 / 100.0 / 91.0; bearings 10/11 | ENSX_PC: 100.0 / 99.0 / 91.0; bearings 11/11
+  L8_all  | ENSX: 56.2 / 87.0 / 93.2; bearings 11/11 | ENSX_PC: 81.2 / 85.8 / 93.0; bearings 11/11
+  L10     | ENSX: 77.7 / 69.4 / 88.9; bearings 51/60 | ENSX_PC: 77.7 / 69.4 / 88.9; bearings 51/60
+  A2R     | ENSX: 34.2 / 81.2 / 96.5; bearings 12/14 | ENSX_PC: 40.8 / 77.5 / 96.7; bearings 12/14
+  LOBO    | ENSX: 67.9 / 87.9 / 87.7; bearings 27/29 | ENSX_PC: 84.4 / 83.3 / 86.4; bearings 28/29
+Operating points without retraining (LOBO): p ~ P / prior**alpha in both branches, then averaged
+  alpha 0.00: accuracy 83.7, false alarms 32.1, missed faults 6.6
+  alpha 0.25: accuracy 84.2, false alarms 27.5, missed faults 7.7
+  alpha 0.50: accuracy 84.3, false alarms 22.7, missed faults 9.1
+  alpha 0.75: accuracy 84.5, false alarms 19.0, missed faults 10.1
+  alpha 1.00: accuracy 84.7, false alarms 15.6, missed faults 11.2
+External datasets, ENSX_PC with training-only abstention at kappa 0.7: coverage / selective accuracy / false alarms / missed (%)
+  cwru   1SIZE: all 73.3 | 28.4 / 71.1 / 0.0 / 9.2
+  cwru   LOSO : all 86.3 | 100.0 / 86.3 / 0.0 / 16.8
+  hust   1TYPE: all 73.9 | 27.2 / 88.8 / 0.4 / 4.4
+  hust   LOTO : all 85.0 | 71.1 / 92.2 / 8.3 / 4.2
+  ottawa 1PROF: all 95.9 | 78.2 / 100.0 / 0.0 / 0.0
+  ottawa LOPO : all 98.3 | 76.0 / 100.0 / 0.0 / 0.0
