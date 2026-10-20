@@ -1,0 +1,33 @@
+bearing,label,main_label,origin,location,extent,mode,arrangement,characteristic,include,source
+K001,0,0,healthy,none,0,run-in >50 h,,,1,Lessmeier 2016 Table 7
+K002,0,0,healthy,none,0,run-in 19 h,,,1,Lessmeier 2016 Table 7
+K003,0,0,healthy,none,0,run-in 1 h,,,1,Lessmeier 2016 Table 7
+K004,0,0,healthy,none,0,run-in 5 h,,,1,Lessmeier 2016 Table 7
+K005,0,0,healthy,none,0,run-in 10 h,,,1,Lessmeier 2016 Table 7
+K006,0,0,healthy,none,0,run-in 16 h,,,1,Lessmeier 2016 Table 7
+KA01,1,1,artificial,OR,1,EDM,S,single point,1,Lessmeier 2016 Table 4
+KA03,1,1,artificial,OR,2,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KA05,1,1,artificial,OR,1,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KA06,1,1,artificial,OR,2,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KA07,1,1,artificial,OR,1,drilling,S,single point,1,Lessmeier 2016 Table 4
+KA08,1,1,artificial,OR,2,drilling,S,single point,1,Lessmeier 2016 Table 4
+KA09,1,1,artificial,OR,2,drilling,S,single point,1,Lessmeier 2016 Table 4
+KI01,2,2,artificial,IR,1,EDM,S,single point,1,Lessmeier 2016 Table 4
+KI03,2,2,artificial,IR,1,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KI05,2,2,artificial,IR,1,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KI07,2,2,artificial,IR,2,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KI08,2,2,artificial,IR,2,electric engraver,S,single point,1,Lessmeier 2016 Table 4
+KA04,1,1,real,OR,1,fatigue: pitting,S,single point,1,Lessmeier 2016 Table 5
+KA15,1,1,real,OR,1,plastic deformation: indentations,S,single point,1,Lessmeier 2016 Table 5
+KA16,1,1,real,OR,2,fatigue: pitting,R,single point,1,Lessmeier 2016 Table 5
+KA22,1,1,real,OR,1,fatigue: pitting,S,single point,1,Lessmeier 2016 Table 5
+KA30,1,1,real,OR,1,plastic deformation: indentations,R,distributed,1,Lessmeier 2016 Table 5
+KI04,2,2,real,IR,1,fatigue: pitting,M,single point,1,Lessmeier 2016 Table 5
+KI14,2,2,real,IR,1,fatigue: pitting,M,single point,1,Lessmeier 2016 Table 5
+KI16,2,2,real,IR,3,fatigue: pitting,S,single point,1,Lessmeier 2016 Table 5
+KI17,2,2,real,IR,1,fatigue: pitting,R,single point,1,Lessmeier 2016 Table 5
+KI18,2,2,real,IR,2,fatigue: pitting,S,single point,1,Lessmeier 2016 Table 5
+KI21,2,2,real,IR,1,fatigue: pitting,S,single point,1,Lessmeier 2016 Table 5
+KB23,3,2,real,IR (+OR),2,fatigue: pitting,M,single point,1,Lessmeier 2016 Table 5
+KB24,3,2,real,IR (+OR),3,fatigue: pitting,M,distributed,1,Lessmeier 2016 Table 5
+KB27,3,3,real,OR + IR,1,plastic deformation: indentations,M,distributed,1,Lessmeier 2016 Table 5

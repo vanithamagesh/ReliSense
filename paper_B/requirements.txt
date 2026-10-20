@@ -1,0 +1,10 @@
+# minimum versions; this release was checked with numpy 2.4.6, scipy 1.17.1, scikit-learn 1.9.1, matplotlib 3.11.2, pillow 12.3.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+pillow>=9.0
+# only for phase4_learned.py and phase6_physics_evidence.py (networks)
+torch>=2.0
+# only for build_32.py (reading the Paderborn .rar archives)
+libarchive-c>=4.0

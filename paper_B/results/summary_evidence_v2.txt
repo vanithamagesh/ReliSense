@@ -1,0 +1,107 @@
+  K001: 80 recordings (21 s)
+  K002: 80 recordings (40 s)
+  K003: 80 recordings (60 s)
+  K004: 80 recordings (79 s)
+  K005: 80 recordings (98 s)
+  K006: 80 recordings (118 s)
+  KA01: 80 recordings (135 s)
+  KA03: 80 recordings (153 s)
+  KA05: 80 recordings (173 s)
+  KA06: 80 recordings (192 s)
+  KA07: 80 recordings (211 s)
+  KA08: 79 recordings (229 s)
+  KA09: 80 recordings (252 s)
+  KI01: 80 recordings (274 s)
+  KI03: 80 recordings (295 s)
+  KI05: 80 recordings (314 s)
+  KI07: 80 recordings (331 s)
+  KI08: 80 recordings (349 s)
+  KA04: 80 recordings (369 s)
+  KA15: 80 recordings (386 s)
+  KA16: 80 recordings (404 s)
+  KA22: 80 recordings (420 s)
+  KA30: 80 recordings (441 s)
+  KI04: 80 recordings (461 s)
+  KI14: 80 recordings (480 s)
+  KI16: 80 recordings (501 s)
+  KI17: 80 recordings (517 s)
+  KI18: 80 recordings (534 s)
+  KI21: 80 recordings (550 s)
+Recordings: 2319; skipped: 1 [array(['N15_M01_F10_KA08_2.mat', 'Expecting matrix here'], dtype=object)]; log base: 10
+
+[E2-0] Reproduction check (manuscript: LOBO 80.1%, FAR 41.0%; C0 88.6, 900 rpm 65.2)
+  LOBO accuracy 80.9%; FAR 39.4%; C0 88.4%, 900rpm 67.2%, lowtorque 89.3%, lowforce 78.4%
+  largest per-bearing differences (this run / manuscript): KI21 91/86, K001 85/80, K005 5/8, K002 88/85, K004 18/15, KI17 41/39, K006 74/72, KI16 96/98
+  class-difference weights OR - H (all 29 bearings): BPFO1 +2.65, BPFO3 +1.84, BSF3 -1.75, BPFO2 +1.27, BSF2 -1.03, shaft3 +0.40
+  class-difference weights IR - H (all 29 bearings): BPFI1 +3.37, BPFO2 -1.69, BPFI2 +1.49, shaft1 +1.41, BPFO1 +0.95, BPFI3 +0.51
+  (manuscript Fig. 8: OR-H BPFO1 +2.60, BPFO3 +1.76, BSF3 -1.81, BPFO2 +1.35; IR-H BPFI1 +3.29, BPFO2 -1.56, BPFI2 +1.40, shaft1 +1.38)
+  log-base check BPFO1 at C0: healthy median 0.68 (this run, base 10); pure-noise median ln 1.34, log10 0.58. Healthy values below the noise floor indicate the wrong base.
+  log-base check BPFI1 at C0: healthy median 0.67 (this run, base 10); pure-noise median ln 1.47, log10 0.64. Healthy values below the noise floor indicate the wrong base.
+
+[E2-1/2/3] Specificity test (11-feature variant)
+  grid orig (0.02-11.80):
+    L8-C0: true 90.5%; best wrong rand8 93.2% (captures ['FTF2~BPFI1']); [E2-1] margin -2.7 pp; mean of 20 random 75.1% (Delta_rand 15.4 pp); P_rank(J=20) 0.095; P_rank(J=20) 0.0952
+      [E2-2] per-bearing true - best wrong: mean -2.7 pp (95% bootstrap -8.6 to 2.7), better/equal/worse 2/5/4 of 11; true - mean random: 15.4 pp (4.1 to 28.0)
+    LOBO : true 78.7%; best wrong rand8 78.4% (captures ['FTF2~BPFI1']); [E2-1] margin 0.3 pp; mean of 20 random 68.3% (Delta_rand 10.4 pp); P_rank(J=20) 0.048; P_rank(J=20) 0.0476
+      [E2-2] per-bearing true - best wrong: mean 0.3 pp (95% bootstrap -5.0 to 5.9), better/equal/worse 11/5/13 of 29; true - mean random: 10.4 pp (4.3 to 16.7)
+    [E2-1] sets truncated at the upper grid end (window or ring beyond 11.80): ['s=1.20', 'rand7', 'rand20']; at the lower end (FTF ring below 0.02, minor): 11 sets
+    [E2-3] random sets (of 20) that capture a true line: 8 ['rand2', 'rand3', 'rand7', 'rand8', 'rand10', 'rand12', 'rand13', 'rand19']; mean LOBO accuracy captured 70.8% vs others 66.7%
+  grid ext (0.02-12.60):
+    L8-C0: true 90.5%; best wrong rand8 93.2% (captures ['FTF2~BPFI1']); [E2-1] margin -2.7 pp; mean of 20 random 75.2% (Delta_rand 15.3 pp); P_rank(J=20) 0.095; P_rank(J=120) 0.0331
+      [E2-2] per-bearing true - best wrong: mean -2.7 pp (95% bootstrap -8.6 to 2.7), better/equal/worse 2/5/4 of 11; true - mean random: 15.3 pp (4.1 to 27.6)
+    LOBO : true 78.7%; best wrong rand8 78.4% (captures ['FTF2~BPFI1']); [E2-1] margin 0.3 pp; mean of 20 random 68.3% (Delta_rand 10.4 pp); P_rank(J=20) 0.048; P_rank(J=120) 0.0165
+      [E2-2] per-bearing true - best wrong: mean 0.3 pp (95% bootstrap -5.0 to 5.9), better/equal/worse 11/5/13 of 29; true - mean random: 10.4 pp (4.3 to 16.7)
+    [E2-1] sets truncated at the upper grid end (window or ring beyond 12.60): []; at the lower end (FTF ring below 0.02, minor): 11 sets
+    [E2-3] random sets (of 20) that capture a true line: 8 ['rand2', 'rand3', 'rand7', 'rand8', 'rand10', 'rand12', 'rand13', 'rand19']; mean LOBO accuracy captured 70.7% vs others 66.7%
+
+[E2-4] Shaft-harmonic audit
+  C0: K004+K005: BPFO1 max within 0.5 Hz of 3fr 12%, BPFI1 max within 0.5 Hz of 5fr 32%; other healthy: BPFO1 max within 0.5 Hz of 3fr 32%, BPFI1 max within 0.5 Hz of 5fr 20%; outer race: BPFO1 max within 0.5 Hz of 3fr 6%, BPFI1 max within 0.5 Hz of 5fr 25%; inner race: BPFO1 max within 0.5 Hz of 3fr 67%, BPFI1 max within 0.5 Hz of 5fr 7%
+  900rpm: K004+K005: BPFO1 max within 0.5 Hz of 3fr 78%, BPFI1 max within 0.5 Hz of 5fr 25%; other healthy: BPFO1 max within 0.5 Hz of 3fr 61%, BPFI1 max within 0.5 Hz of 5fr 42%; outer race: BPFO1 max within 0.5 Hz of 3fr 25%, BPFI1 max within 0.5 Hz of 5fr 38%; inner race: BPFO1 max within 0.5 Hz of 3fr 68%, BPFI1 max within 0.5 Hz of 5fr 8%
+  lowtorque: K004+K005: BPFO1 max within 0.5 Hz of 3fr 22%, BPFI1 max within 0.5 Hz of 5fr 12%; other healthy: BPFO1 max within 0.5 Hz of 3fr 30%, BPFI1 max within 0.5 Hz of 5fr 26%; outer race: BPFO1 max within 0.5 Hz of 3fr 5%, BPFI1 max within 0.5 Hz of 5fr 25%; inner race: BPFO1 max within 0.5 Hz of 3fr 69%, BPFI1 max within 0.5 Hz of 5fr 9%
+  lowforce: K004+K005: BPFO1 max within 0.5 Hz of 3fr 65%, BPFI1 max within 0.5 Hz of 5fr 8%; other healthy: BPFO1 max within 0.5 Hz of 3fr 30%, BPFI1 max within 0.5 Hz of 5fr 19%; outer race: BPFO1 max within 0.5 Hz of 3fr 15%, BPFI1 max within 0.5 Hz of 5fr 23%; inner race: BPFO1 max within 0.5 Hz of 3fr 68%, BPFI1 max within 0.5 Hz of 5fr 17%
+  probe with shaft-harmonic bins (+-0.5 Hz) removed from BPFO/BPFI/BSF bands: LOBO 80.4% (FAR 41.5%), L8-C0 85.0%; K004 25%, K005 15% (unnotched 18%, 5%)
+
+[E2-5] Paderborn condition-matched contrast Gamma (decimal or natural log per LOG_BASE)
+  C0: rho(Gamma median ref, LOBO acc at C0) = 0.66 (p = 0.001, n = 23); vs all-condition acc 0.68; rho over the single references 0.66 to 0.67; median spread of Gamma over references 0.56
+  900rpm: rho(Gamma median ref, LOBO acc at 900rpm) = 0.81 (p = 0.000, n = 23); vs all-condition acc 0.75; rho over the single references 0.76 to 0.84; median spread of Gamma over references 0.18
+  all damaged (n = 23): Gamma 1500 -> 900 rpm median 0.62 -> 0.35, median paired change -0.27 (Wilcoxon p = 0.003); accuracy 93.3% -> 73.7%
+  real level 1 (n = 8): Gamma 1500 -> 900 rpm median 0.26 -> 0.27, median paired change -0.20 (Wilcoxon p = 0.547); accuracy 81.2% -> 56.2%
+  real level 2-3 (n = 3): Gamma 1500 -> 900 rpm median 1.44 -> 0.64, median paired change -0.20 (Wilcoxon p = nan); accuracy 98.3% -> 96.7%
+  artificial (n = 12): Gamma 1500 -> 900 rpm median 0.77 -> 0.43, median paired change -0.42 (Wilcoxon p = 0.001); accuracy 100.0% -> 79.6%
+  per bearing at C0 / 900 rpm (Gamma median, LOBO acc): KA01 3.29/3.19 (100/100%); KA03 0.37/0.39 (100/100%); KA05 0.52/0.47 (100/100%); KA06 0.86/0.59 (100/100%); KA07 1.72/0.67 (100/100%); KA08 1.45/0.47 (100/100%); KA09 0.82/-0.17 (100/0%); KI01 1.89/1.23 (100/100%); KI03 0.16/-0.06 (100/90%); KI05 0.72/0.09 (100/5%); KI07 0.53/0.11 (100/65%); KI08 0.62/0.20 (100/95%); KA04 1.57/1.30 (100/95%); KA15 -0.24/0.35 (80/65%); KA16 1.44/1.74 (100/100%); KA22 -0.22/0.26 (65/40%); KA30 0.20/0.05 (95/5%); KI04 1.44/0.78 (100/100%); KI14 0.30/0.05 (100/20%); KI16 0.40/0.21 (95/90%); KI17 0.21/-0.06 (30/25%); KI18 1.93/0.64 (100/100%); KI21 0.34/0.28 (80/100%)
+
+[E2-6] Healthy state
+  K001: median log-odds OR:H -3.02 (>0 in 9%), top BPFO2 +0.79, shaft2 +0.30, FTF1 +0.20; IR:H -2.63 (>0 in 11%), top FTF1 +0.26, shaft3 +0.22, BSF3 +0.16
+  K002: median log-odds OR:H -1.50 (>0 in 1%), top BPFI3 +0.34, BPFO2 +0.21, shaft2 +0.15; IR:H -2.50 (>0 in 11%), top BPFI3 +0.48, BSF3 +0.06, FTF1 +0.05
+  K003: median log-odds OR:H -3.61 (>0 in 1%), top BPFO2 +1.04, shaft2 +0.15, BSF1 +0.04; IR:H -3.44 (>0 in 4%), top BSF3 +0.31, BPFI2 +0.14, shaft3 +0.09
+  K004: median log-odds OR:H +0.85 (>0 in 74%), top BSF3 +1.61, BSF2 +0.84, shaft2 +0.39; IR:H -0.01 (>0 in 50%), top BPFO2 +2.22, BSF1 +0.23, shaft2 +0.19
+  K005: median log-odds OR:H +1.81 (>0 in 92%), top BSF3 +1.82, BSF2 +1.51, BPFI2 +0.36; IR:H -0.98 (>0 in 26%), top BPFO2 +1.50, BSF2 +0.31, BPFO3 +0.14
+  K006: median log-odds OR:H -1.03 (>0 in 22%), top BPFO2 +0.78, shaft2 +0.31, BSF1 +0.10; IR:H -2.71 (>0 in 9%), top BSF3 +0.23, BPFO3 +0.17, BSF1 +0.11
+  threshold rule: pooled FAR 13.1% (bearing mean 13.1%; independence 9.75%); per healthy bearing recall K001 99%, K002 95%, K003 99%, K004 80%, K005 92%, K006 56%; damaged mean per-bearing accuracy 77.3% (probe 86.1%)
+  [matched operating point] probe flagged 13.1% of healthy recordings; detected 76.3% of damaged recordings and assigned the correct race to 74.6%; threshold rule detected 81.0% and assigned the correct race to 77.3%
+
+[E2-7] Bearing identity (5-fold stratified CV over recordings; 29-class LR, C = 1)
+  core (15): all 72.4% (manuscript 70.6/97.7/98.2/82.3); 15 PCs 72.4%; within class H 76.5% (chance 16.7%), OR 70.3% (chance 8.3%), IR 85.3% (chance 9.1%)
+  band energies (32): all 98.4% (manuscript 70.6/97.7/98.2/82.3); 15 PCs 97.9%; within class H 94.8% (chance 16.7%), OR 99.9% (chance 8.3%), IR 100.0% (chance 9.1%)
+  time + band (43): all 99.2% (manuscript 70.6/97.7/98.2/82.3); 15 PCs 98.5%; within class H 97.9% (chance 16.7%), OR 99.9% (chance 8.3%), IR 99.8% (chance 9.1%)
+  order spectrum (590): all 83.2% (manuscript 70.6/97.7/98.2/82.3); 15 PCs 75.4%; within class H 83.1% (chance 16.7%), OR 83.5% (chance 8.3%), IR 95.7% (chance 9.1%)
+
+[E2-8] Matched training comparison (test: the ten real-damage L8 bearings and K001)
+  mean over ten real-damage bearings, C0 / all conditions: artificial (L8) 86.5/83.6%; real, same numbers (30 draws) 86.5/81.1%; L8 + K004 + K005 68.5/67.6%
+  per bearing artificial - real at C0: mean -0.1 pp (95% bootstrap -8.4 to 7.7); K001 recall at C0: L8 100%, L8 + K004/K005 75%
+  LOBO with K004/K005 removed from every training set: real damage 85.3% (standard LOBO 79.8%)
+
+[E2-9] External contrast association
+  values reconstructed from Fig. 10(b) (approximate); set PB_EXTERNAL_CSV for the exact values
+  pooled rho 0.705 (t-approx p 0.0023, n 16); permutation p 0.0021 (two-sided), 0.0011 (one-sided); within-dataset permutation p 0.0029; leave-one-out rho 0.64 to 0.75
+  within CWRU: rho 0.65 (n 6), one-sided permutation p 0.167
+  within HUST: rho 0.68 (n 10), one-sided permutation p 0.019
+  Gamma > 1.1: 11/11 without error; Gamma <= 1.1: 4/5 with errors
+
+[E2-10] Folding at C0: synchronous-average peak factor (median over recordings)
+  healthy (at BPFO): nominal period 1.26, estimated period 1.20, estimated +10% 1.18
+  outer race (BPFO): nominal period 1.41, estimated period 2.11, estimated +10% 1.16
+  inner race (BPFI): nominal period 1.23, estimated period 1.41, estimated +10% 1.14
+  K001: nominal 1.26, estimated 1.18, +10% 1.18
+  KA16: nominal 1.89, estimated 3.23, +10% 1.16
+  KI18: nominal 2.67, estimated 5.04, +10% 1.14

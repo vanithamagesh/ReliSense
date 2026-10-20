@@ -1,0 +1,652 @@
+{
+ "tables": {
+  "size_origin": [
+   {
+    "group": "artificial, level 1 (≤ 2 mm)",
+    "bearings": [
+     "KA01",
+     "KA05",
+     "KA07",
+     "KI01",
+     "KI03",
+     "KI05"
+    ],
+    "n": 6,
+    "ReliSense": 94.8,
+    "Threshold rule": 88.3,
+    "CPW + LR": 80.8,
+    "60 env. feat. + LR": 95.0,
+    "60 env. feat. + RF": 87.5,
+    "WDCNN (envelope)": 69.6
+   },
+   {
+    "group": "artificial, level 2 (2–4.5 mm)",
+    "bearings": [
+     "KA03",
+     "KA06",
+     "KA08",
+     "KA09",
+     "KI07",
+     "KI08"
+    ],
+    "n": 6,
+    "ReliSense": 88.3,
+    "Threshold rule": 81.6,
+    "CPW + LR": 83.3,
+    "60 env. feat. + LR": 88.1,
+    "60 env. feat. + RF": 89.0,
+    "WDCNN (envelope)": 55.8
+   },
+   {
+    "group": "real, level 1 (≤ 2 mm)",
+    "bearings": [
+     "KA04",
+     "KA15",
+     "KA22",
+     "KA30",
+     "KI04",
+     "KI14",
+     "KI17",
+     "KI21"
+    ],
+    "n": 8,
+    "ReliSense": 71.7,
+    "Threshold rule": 57.3,
+    "CPW + LR": 66.6,
+    "60 env. feat. + LR": 69.5,
+    "60 env. feat. + RF": 78.6,
+    "WDCNN (envelope)": 75.8
+   },
+   {
+    "group": "real, level 2 (2–4.5 mm)",
+    "bearings": [
+     "KA16",
+     "KI18"
+    ],
+    "n": 2,
+    "ReliSense": 100.0,
+    "Threshold rule": 100.0,
+    "CPW + LR": 100.0,
+    "60 env. feat. + LR": 98.1,
+    "60 env. feat. + RF": 100.0,
+    "WDCNN (envelope)": 100.0
+   },
+   {
+    "group": "real, level 3 (4.5–13.5 mm)",
+    "bearings": [
+     "KI16"
+    ],
+    "n": 1,
+    "ReliSense": 97.5,
+    "Threshold rule": 73.8,
+    "CPW + LR": 97.5,
+    "60 env. feat. + LR": 93.8,
+    "60 env. feat. + RF": 98.8,
+    "WDCNN (envelope)": 75.0
+   },
+   {
+    "group": "healthy",
+    "bearings": [
+     "K001",
+     "K002",
+     "K003",
+     "K004",
+     "K005",
+     "K006"
+    ],
+    "n": 6,
+    "ReliSense": 59.0,
+    "Threshold rule": 86.2,
+    "CPW + LR": 63.3,
+    "60 env. feat. + LR": 64.0,
+    "60 env. feat. + RF": 67.9,
+    "WDCNN (envelope)": 57.1
+   }
+  ],
+  "method": [
+   {
+    "group": "EDM trench (0.25 mm)",
+    "bearings": [
+     "KA01",
+     "KI01"
+    ],
+    "n": 2,
+    "ReliSense": 100.0,
+    "Threshold rule": 100.0,
+    "CPW + LR": 100.0,
+    "60 env. feat. + LR": 100.0,
+    "60 env. feat. + RF": 100.0,
+    "WDCNN (envelope)": 100.0
+   },
+   {
+    "group": "Drilling (Ø 0.9–3 mm)",
+    "bearings": [
+     "KA07",
+     "KA08",
+     "KA09"
+    ],
+    "n": 3,
+    "ReliSense": 87.4,
+    "Threshold rule": 77.8,
+    "CPW + LR": 85.3,
+    "60 env. feat. + LR": 87.0,
+    "60 env. feat. + RF": 92.5,
+    "WDCNN (envelope)": 55.0
+   },
+   {
+    "group": "Electric engraver (1–4 mm)",
+    "bearings": [
+     "KA03",
+     "KA05",
+     "KA06",
+     "KI03",
+     "KI05",
+     "KI07",
+     "KI08"
+    ],
+    "n": 7,
+    "ReliSense": 90.9,
+    "Threshold rule": 83.8,
+    "CPW + LR": 75.5,
+    "60 env. feat. + LR": 91.1,
+    "60 env. feat. + RF": 83.0,
+    "WDCNN (envelope)": 55.4
+   },
+   {
+    "group": "Fatigue pitting",
+    "bearings": [
+     "KA04",
+     "KA16",
+     "KA22",
+     "KI04",
+     "KI14",
+     "KI16",
+     "KI17",
+     "KI18",
+     "KI21"
+    ],
+    "n": 9,
+    "ReliSense": 84.9,
+    "Threshold rule": 76.0,
+    "CPW + LR": 82.4,
+    "60 env. feat. + LR": 82.2,
+    "60 env. feat. + RF": 89.0,
+    "WDCNN (envelope)": 79.4
+   },
+   {
+    "group": "Indentations",
+    "bearings": [
+     "KA15",
+     "KA30"
+    ],
+    "n": 2,
+    "ReliSense": 53.8,
+    "Threshold rule": 24.4,
+    "CPW + LR": 44.4,
+    "60 env. feat. + LR": 53.1,
+    "60 env. feat. + RF": 63.1,
+    "WDCNN (envelope)": 83.1
+   }
+  ],
+  "arrangement_real": [
+   {
+    "group": "single",
+    "bearings": [
+     "KA04",
+     "KA15",
+     "KA22",
+     "KI16",
+     "KI18",
+     "KI21"
+    ],
+    "n": 6,
+    "ReliSense": 84.4,
+    "Threshold rule": 66.5,
+    "CPW + LR": 84.0,
+    "60 env. feat. + LR": 84.4,
+    "60 env. feat. + RF": 92.9,
+    "WDCNN (envelope)": 85.8
+   },
+   {
+    "group": "repeated",
+    "bearings": [
+     "KA16",
+     "KA30",
+     "KI17"
+    ],
+    "n": 3,
+    "ReliSense": 61.7,
+    "Threshold rule": 52.5,
+    "CPW + LR": 50.0,
+    "60 env. feat. + LR": 54.2,
+    "60 env. feat. + RF": 63.8,
+    "WDCNN (envelope)": 72.9
+   },
+   {
+    "group": "multiple",
+    "bearings": [
+     "KI04",
+     "KI14"
+    ],
+    "n": 2,
+    "ReliSense": 90.0,
+    "Threshold rule": 88.1,
+    "CPW + LR": 88.1,
+    "60 env. feat. + LR": 88.8,
+    "60 env. feat. + RF": 89.4,
+    "WDCNN (envelope)": 73.8
+   }
+  ],
+  "characteristic_real": [
+   {
+    "group": "single point",
+    "bearings": [
+     "KA04",
+     "KA15",
+     "KA16",
+     "KA22",
+     "KI04",
+     "KI14",
+     "KI16",
+     "KI17",
+     "KI18",
+     "KI21"
+    ],
+    "n": 10,
+    "ReliSense": 82.5,
+    "Threshold rule": 69.6,
+    "CPW + LR": 80.2,
+    "60 env. feat. + LR": 81.2,
+    "60 env. feat. + RF": 87.6,
+    "WDCNN (envelope)": 80.8
+   },
+   {
+    "group": "distributed",
+    "bearings": [
+     "KA30"
+    ],
+    "n": 1,
+    "ReliSense": 46.2,
+    "Threshold rule": 36.2,
+    "CPW + LR": 27.5,
+    "60 env. feat. + LR": 33.8,
+    "60 env. feat. + RF": 51.2,
+    "WDCNN (envelope)": 73.8
+   }
+  ],
+  "location": [
+   {
+    "group": "artificial OR",
+    "bearings": [
+     "KA01",
+     "KA03",
+     "KA05",
+     "KA06",
+     "KA07",
+     "KA08",
+     "KA09"
+    ],
+    "n": 7,
+    "ReliSense": 94.6,
+    "Threshold rule": 83.7,
+    "CPW + LR": 89.6,
+    "60 env. feat. + LR": 94.4,
+    "60 env. feat. + RF": 96.8,
+    "WDCNN (envelope)": 70.0
+   },
+   {
+    "group": "artificial IR",
+    "bearings": [
+     "KI01",
+     "KI03",
+     "KI05",
+     "KI07",
+     "KI08"
+    ],
+    "n": 5,
+    "ReliSense": 87.2,
+    "Threshold rule": 86.8,
+    "CPW + LR": 71.5,
+    "60 env. feat. + LR": 87.5,
+    "60 env. feat. + RF": 76.2,
+    "WDCNN (envelope)": 52.5
+   },
+   {
+    "group": "real OR",
+    "bearings": [
+     "KA04",
+     "KA15",
+     "KA16",
+     "KA22",
+     "KA30"
+    ],
+    "n": 5,
+    "ReliSense": 73.8,
+    "Threshold rule": 53.2,
+    "CPW + LR": 73.5,
+    "60 env. feat. + LR": 75.8,
+    "60 env. feat. + RF": 82.8,
+    "WDCNN (envelope)": 87.0
+   },
+   {
+    "group": "real IR",
+    "bearings": [
+     "KI04",
+     "KI14",
+     "KI16",
+     "KI17",
+     "KI18",
+     "KI21"
+    ],
+    "n": 6,
+    "ReliSense": 83.8,
+    "Threshold rule": 77.7,
+    "CPW + LR": 77.1,
+    "60 env. feat. + LR": 77.9,
+    "60 env. feat. + RF": 85.6,
+    "WDCNN (envelope)": 74.4
+   }
+  ]
+ },
+ "stats": {
+  "spearman_level_all_damaged": {
+   "rho": 0.192,
+   "p": 0.3789,
+   "n": 23
+  },
+  "spearman_level_real": {
+   "rho": 0.545,
+   "p": 0.0832,
+   "n": 11
+  },
+  "mwu_level1_artificial_vs_real": {
+   "median_art": 100.0,
+   "median_real": 71.25,
+   "U": 40.0,
+   "p": 0.0407,
+   "n": [
+    6,
+    8
+   ]
+  },
+  "mwu_real_single_vs_repeated_or_distributed": {
+   "median_single": 91.875,
+   "median_other": 80.0,
+   "U": 17.0,
+   "p": 0.7823,
+   "n": [
+    6,
+    5
+   ]
+  },
+  "mwu_real_pitting_vs_indentation": {
+   "median_pitting": 97.5,
+   "median_indent": 53.75,
+   "U": 16.0,
+   "p": 0.1221,
+   "n": [
+    9,
+    2
+   ]
+  },
+  "kruskal_method": {
+   "H": 6.672,
+   "p": 0.1543,
+   "n": [
+    2,
+    3,
+    7,
+    9,
+    2
+   ]
+  },
+  "spearman_runin_healthy": {
+   "rho": 0.029,
+   "p": 0.9572,
+   "n": 6,
+   "runin_h": {
+    "K001": 50.0,
+    "K002": 19.0,
+    "K003": 1.0,
+    "K004": 5.0,
+    "K005": 10.0,
+    "K006": 16.0
+   },
+   "acc": {
+    "K001": 80.0,
+    "K002": 85.0,
+    "K003": 93.75,
+    "K004": 15.0,
+    "K005": 7.5,
+    "K006": 72.5
+   }
+  },
+  "smallest_defect": {
+   "KA01": 100.0,
+   "KI01": 100.0
+  },
+  "bearings_where_model_is_best_or_tied": {
+   "ReliSense": 12,
+   "Threshold rule": 10,
+   "CPW + LR": 6,
+   "60 env. feat. + LR": 9,
+   "60 env. feat. + RF": 15,
+   "WDCNN (envelope)": 12
+  },
+  "oracle_mean_best_model_per_bearing": 91.7,
+  "all_models_below_60": [
+   "KI17"
+  ],
+  "all_models_at_least_95": [
+   "KA01",
+   "KA04",
+   "KA16",
+   "KI01",
+   "KI18"
+  ],
+  "paired_vs_ReliSense": {
+   "Threshold rule": {
+    "mean_diff": 1.9,
+    "wins": 13,
+    "ties": 9,
+    "losses": 7,
+    "p_wilcoxon": 0.2873
+   },
+   "CPW + LR": {
+    "mean_diff": 4.4,
+    "wins": 14,
+    "ties": 9,
+    "losses": 6,
+    "p_wilcoxon": 0.211
+   },
+   "60 env. feat. + LR": {
+    "mean_diff": -0.2,
+    "wins": 11,
+    "ties": 10,
+    "losses": 8,
+    "p_wilcoxon": 0.7623
+   },
+   "60 env. feat. + RF": {
+    "mean_diff": -2.4,
+    "wins": 5,
+    "ties": 9,
+    "losses": 15,
+    "p_wilcoxon": 0.0699
+   },
+   "WDCNN (envelope)": {
+    "mean_diff": 12.0,
+    "wins": 15,
+    "ties": 5,
+    "losses": 9,
+    "p_wilcoxon": 0.1095
+   }
+  },
+  "spearman_between_models": {
+   "ReliSense | Threshold rule": 0.68,
+   "ReliSense | 60 env. feat. + RF": 0.89,
+   "ReliSense | WDCNN (envelope)": 0.49,
+   "Threshold rule | WDCNN (envelope)": 0.47,
+   "CPW + LR | ReliSense": 0.78,
+   "CPW + LR | Threshold rule": 0.67,
+   "CPW + LR | 60 env. feat. + RF": 0.88,
+   "CPW + LR | WDCNN (envelope)": 0.69,
+   "60 env. feat. + LR | ReliSense": 0.92,
+   "60 env. feat. + LR | Threshold rule": 0.61,
+   "60 env. feat. + LR | CPW + LR": 0.83,
+   "60 env. feat. + LR | 60 env. feat. + RF": 0.91,
+   "60 env. feat. + LR | WDCNN (envelope)": 0.53,
+   "60 env. feat. + RF | Threshold rule": 0.63,
+   "60 env. feat. + RF | WDCNN (envelope)": 0.66
+  },
+  "condition_accuracy_by_group": {
+   "order": [
+    "N15_M07_F10",
+    "N09_M07_F10",
+    "N15_M01_F10",
+    "N15_M07_F04"
+   ],
+   "artificial": [
+    100.0,
+    78.8,
+    100.0,
+    87.5
+   ],
+   "real, level 1": [
+    81.2,
+    53.8,
+    82.5,
+    69.4
+   ],
+   "real, level 2-3": [
+    98.3,
+    98.3,
+    100.0,
+    100.0
+   ],
+   "healthy": [
+    70.8,
+    36.7,
+    71.7,
+    56.7
+   ]
+  }
+ },
+ "external": {
+  "hust_contrast": {
+   "B5": 0.775,
+   "B6": 0.123,
+   "B7": 0.761,
+   "B8": 0.664,
+   "I4": 1.034,
+   "I5": 1.113,
+   "I6": 2.16,
+   "I7": 0.896,
+   "I8": 1.671,
+   "O4": 2.169,
+   "O5": 2.461,
+   "O6": 0.902,
+   "O7": 2.803,
+   "O8": 0.37
+  },
+  "cwru_contrast": {
+   "B007": 0.51,
+   "B014": -0.161,
+   "B021": 0.14,
+   "IR007": 3.064,
+   "IR014": 1.677,
+   "IR021": 2.579,
+   "OR007": 3.5,
+   "OR014": 0.391,
+   "OR021": 1.825
+  },
+  "hust_by_type": {
+   "6204": {
+    "pitch_mm": 33.5,
+    "ball_mm": 7.6,
+    "ReliSense (P + LR)": 66.7,
+    "time + band + RF": 66.7,
+    "band energies + LR": 66.7
+   },
+   "6205": {
+    "pitch_mm": 38.5,
+    "ball_mm": 7.8,
+    "ReliSense (P + LR)": 66.7,
+    "time + band + RF": 69.4,
+    "band energies + LR": 61.1
+   },
+   "6206": {
+    "pitch_mm": 46.0,
+    "ball_mm": 9.0,
+    "ReliSense (P + LR)": 97.2,
+    "time + band + RF": 72.2,
+    "band energies + LR": 66.7
+   },
+   "6207": {
+    "pitch_mm": 53.5,
+    "ball_mm": 11.0,
+    "ReliSense (P + LR)": 86.1,
+    "time + band + RF": 66.7,
+    "band energies + LR": 33.3
+   },
+   "6208": {
+    "pitch_mm": 60.0,
+    "ball_mm": 12.0,
+    "ReliSense (P + LR)": 69.4,
+    "time + band + RF": 80.6,
+    "band energies + LR": 44.4
+   }
+  },
+  "hust_by_class": {
+   "N": {
+    "ReliSense (P + LR)": 78.3,
+    "time + band + RF": 100.0,
+    "band energies + LR": 73.3
+   },
+   "O": {
+    "ReliSense (P + LR)": 81.7,
+    "time + band + RF": 53.3,
+    "band energies + LR": 23.3
+   },
+   "I": {
+    "ReliSense (P + LR)": 71.7,
+    "time + band + RF": 60.0,
+    "band energies + LR": 66.7
+   }
+  },
+  "spearman_pitch_vs_relisense_hust": {
+   "rho": 0.564,
+   "p": 0.3217,
+   "n": 5
+  },
+  "spearman_contrast_vs_acc_hust_faulty": {
+   "rho": 0.679,
+   "p": 0.031,
+   "n": 10
+  },
+  "spearman_contrast_vs_acc_hust_cwru_faulty": {
+   "rho": 0.704,
+   "p": 0.0023,
+   "n": 16
+  },
+  "cwru_by_size": {
+   "007": {
+    "diameter_mm": 0.178,
+    "ReliSense (P + LR)": 100.0,
+    "time + band + RF": 100.0,
+    "band energies + LR": 63.6
+   },
+   "014": {
+    "diameter_mm": 0.356,
+    "ReliSense (P + LR)": 50.0,
+    "time + band + RF": 50.0,
+    "band energies + LR": 72.7
+   },
+   "021": {
+    "diameter_mm": 0.533,
+    "ReliSense (P + LR)": 100.0,
+    "time + band + RF": 51.7,
+    "band energies + LR": 28.4
+   }
+  }
+ }
+}
